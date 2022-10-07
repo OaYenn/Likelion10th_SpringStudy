@@ -1,6 +1,6 @@
-package com.sparta.week04.service;
+package com.sparta.week05.service;
 
-import com.sparta.week04.domain.*;
+import com.sparta.week05.domain.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

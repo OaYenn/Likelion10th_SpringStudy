@@ -1,10 +1,10 @@
-package com.sparta.week04.controller;
+package com.sparta.week05.controller;
 
-import com.sparta.week04.domain.Product;
-import com.sparta.week04.domain.ProductMypriceRequestDto;
-import com.sparta.week04.domain.ProductRepository;
-import com.sparta.week04.domain.ProductRequestDto;
-import com.sparta.week04.service.ProductService;
+import com.sparta.week05.domain.Product;
+import com.sparta.week05.domain.ProductMypriceRequestDto;
+import com.sparta.week05.domain.ProductRepository;
+import com.sparta.week05.domain.ProductRequestDto;
+import com.sparta.week05.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,6 @@ public class ProductRestController {
     // 등록된 전체 상품 목록 조회
     @GetMapping("/api/products")
     public List<Product> getProducts() {
-//        TODO: git test 1007
         return productRepository.findAll();
     }
 
